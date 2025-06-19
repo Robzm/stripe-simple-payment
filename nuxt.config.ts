@@ -15,7 +15,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     stripeSecretKey: process.env.STRIPE_SECRET_KEY, // Solo accesible en el backend
     public: {
-      stripePublicKey: process.env.STRIPE_PUBLIC_KEY // Disponible en frontend
+      stripePublicKey: process.env.STRIPE_PUBLIC_KEY, // Disponible en frontend
+      baseUrl:''
     }
   }
 })
