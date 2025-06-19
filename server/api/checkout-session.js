@@ -19,8 +19,8 @@ export default defineEventHandler(async (event) => {
       quantity: 1,
     }],
     mode: 'payment',
-    success_url: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://stripe-simple-payment.vercel.app/'}/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://stripe-simple-payment.vercel.app/'}/cancel`,
+    success_url: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://stripe-simple-payment-4jqz.vercel.app/'}/success?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://stripe-simple-payment-4jqz.vercel.app/'}/cancel`,
   });
 
   return { url: session.url };
