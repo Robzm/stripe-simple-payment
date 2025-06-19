@@ -1,17 +1,37 @@
 
 # Stripe Pasarela - Integracion simple de Stripe con Nuxt.Js
 
-<table>
+[🔗 Ir a la demo en vivo](https://stripe-simple-payment-4jqz.vercel.app/)
+
+
+
+
+
+<!-- <table>
   
   <tr>
     <td><img src="./screenshots/image1.png" width="200" style="border-radius: 8px"></td>
     <td><img src="./screenshots/image2.png" width="200" style="border-radius: 8px"></td>
     <td><img src="./screenshots/image3.png" width="200" style="border-radius: 8px"></td>
   </tr>
-</table> 
+</table>  -->
+
+##  Datos de Prueba Stripe
+
+Para probar la pasarela de pagos, usa estas tarjetas de prueba:
+
+| Caso de Prueba       | Número de Tarjeta       | Comportamiento               |
+|----------------------|-------------------------|------------------------------|
+| Pago exitoso         | `4242 4242 4242 4242`   | Transacción aprobada         |
+
+
+**Datos adicionales:**
+- Fecha de expiración: Cualquier fecha futura (ej: 12/30)
+- CVC: Cualquier código de 3 dígitos (ej: 123)
 
 
 Stripe Pasarela es una aplicación web desarrollada con Nuxt.js que permite integrar de manera sencilla y eficiente la pasarela de pagos de Stripe en tus proyectos. Esta aplicación proporciona una interfaz intuitiva para gestionar pagos, suscripciones y transacciones, facilitando la implementación de soluciones de comercio electrónico.
+
 ## Tecnologías
 - **Nuxt.js**: Framework de Vue.js para crear aplicaciones web universales.
 - **Stripe API**: Plataforma de pagos que permite realizar transacciones seguras en línea.
