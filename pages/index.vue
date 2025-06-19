@@ -25,7 +25,8 @@
                     <span class="text-base font-semibold text-green-600">S/ {{ (product.default_price?.unit_amount /
                         100).toFixed(2) || '--.--' }}</span>
                     <button
-                        class="bg-black text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 text-sm">Comprar</button>
+                    @click="handleCheckout(product.default_price?.id)"
+                        class="bg-black text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 text-sm cursor-pointer">Comprar</button>
                 </div>
             </div>
         </div>
@@ -38,7 +39,31 @@
 
 
 <script setup>
+
+
 const { data: products } = await useFetch('/api/stripe-products')
+
+const handleCheckout = async (priceId) => {
+  if (!priceId) {
+    console.error('No price ID for this product');
+    return;
+  }
+
+  try {
+    const { url } = await $fetch('/api/checkout-session', {
+      method: 'POST',
+      body: { priceId }
+    });
+    
+    
+    window.location.href = url;
+  } catch (error) {
+    console.error('Error:', error);
+    
+  }
+};
+
+
 
 </script>
 <style lang="">
