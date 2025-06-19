@@ -1,75 +1,54 @@
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Stripe Pasarela - Integracion simple de Stripe con Nuxt.Js
 
-## Setup
+<table>
+  
+  <tr>
+    <td><img src="./screenshots/image1.png" width="200" style="border-radius: 8px"></td>
+    <td><img src="./screenshots/image2.png" width="200" style="border-radius: 8px"></td>
+    <td><img src="./screenshots/image3.png" width="200" style="border-radius: 8px"></td>
+  </tr>
+</table> 
 
-Make sure to install dependencies:
 
-```bash
-# npm
-npm install
+Stripe Pasarela es una aplicación web desarrollada con Nuxt.js que permite integrar de manera sencilla y eficiente la pasarela de pagos de Stripe en tus proyectos. Esta aplicación proporciona una interfaz intuitiva para gestionar pagos, suscripciones y transacciones, facilitando la implementación de soluciones de comercio electrónico.
+## Tecnologías
+- **Nuxt.js**: Framework de Vue.js para crear aplicaciones web universales.
+- **Stripe API**: Plataforma de pagos que permite realizar transacciones seguras en línea.
+- **Vue.js**: Biblioteca de JavaScript para construir interfaces de usuario. 
+- **Tailwind CSS**: Framework de CSS para diseñar interfaces modernas y responsivas.
+## Instalación y Uso
+Para instalar y utilizar Stripe Pasarela, sigue estos pasos:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Robzm/stripe-simple-payment.git
+   cd stripe-simple-payment
+    ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+   o
+   ```bash
+   yarn install
+   ```
+3. Configura tus credenciales de Stripe:
+   Crea un archivo `.env` en la raíz del proyecto y añade tus claves de API de Stripe:
+   ```env
+   STRIPE_PUBLIC_KEY=tu_clave_publica
+   STRIPE_SECRET_KEY=tu_clave_secreta
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+   o
+   ```bash
+   yarn dev
+   ```
+5. Abre tu navegador y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
