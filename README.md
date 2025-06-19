@@ -1,7 +1,10 @@
 
 # Stripe Pasarela - Integracion simple de Stripe con Nuxt.Js
 
-[🔗 Ir a la demo en vivo](https://stripe-simple-payment-4jqz.vercel.app/)
+<a href="https://stripe-simple-payment-4jqz.vercel.app/" target="_blank" rel="noopener noreferrer">
+  Ver demo Stripe
+</a>
+
 
 
 
